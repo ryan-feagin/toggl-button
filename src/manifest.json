@@ -125,7 +125,8 @@
     "*://*.proworkflow6.net/*",
     "*://*.targetprocess.com/*",
     "*://*.tpondemand.com/*",
-    "*://*.visualstudio.com/*"
+    "*://*.visualstudio.com/*",
+    "*://*.rallydev.com/*"
   ],
   "content_scripts": [
     {
@@ -219,7 +220,8 @@
         "*://*.proworkflow6.net/*",
         "*://*.targetprocess.com/*",
         "*://*.tpondemand.com/*",
-        "*://*.visualstudio.com/*"
+        "*://*.visualstudio.com/*",
+    	"*://*.rallydev.com/*"
       ],
       "css": ["styles/style.css"],
       "js": ["scripts/common.js"]
@@ -558,6 +560,10 @@
     {
       "matches": ["*://*.evernote.com/*"],
       "js": ["scripts/content/evernote.js"]
+    },
+    {
+      "matches": ["*://*.rallydev.com/*"],
+      "js": ["scripts/content/rally.js"]
     }
   ]
 }
